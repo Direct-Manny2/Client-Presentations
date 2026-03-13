@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Comunidad's Property Search</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f5f7fa; color: #333; }
+.header { background: #1a6b3a; color: white; padding: 20px 24px; }
+.header h1 { font-size: 20px; font-weight: 600; margin: 0 0 2px; }
+.header p { font-size: 13px; opacity: 0.8; margin: 0; }
+.divider { margin-top: 14px; padding-top: 14px; border-top: 0.5px solid rgba(255,255,255,0.3); display: flex; flex-wrap: wrap; gap: 16px; }
+.body { padding: 16px; }
+.card { background: white; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 16px 20px; margin-bottom: 14px; }
+.section-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: #888; margin: 0 0 12px; }
+.prop-card { border: 0.5px solid #e0e0e0; border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+.prop-card:last-child { margin-bottom: 0; }
+.prop-img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.prop-body { padding: 12px 14px; }
+.prop-address { font-size: 15px; font-weight: 600; color: #222; margin: 0 0 4px; }
+.prop-price { font-size: 22px; font-weight: 600; color: #1a6b3a; margin: 0 0 8px; }
+.prop-price-tbd { font-size: 15px; color: #888; margin: 0 0 8px; }
+.urgent { background: #fdecea; border-left: 3px solid #e74c3c; border-radius: 6px; padding: 8px 10px; font-size: 12px; color: #a32d2d; font-weight: 600; margin-bottom: 10px; }
+.badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+.badge-green { background: #e6f4ec; color: #1a6b3a; }
+.badge-yellow { background: #fef9e7; color: #b7770d; }
+.view-btn { display: inline-block; font-size: 13px; font-weight: 500; color: #1a6b3a; border: 1px solid #1a6b3a; border-radius: 8px; padding: 6px 14px; text-decoration: none; margin-top: 8px; }
+.row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 0.5px solid #f0f0f0; font-size: 14px; color: #555; }
+.row:last-child { border-bottom: none; }
+.step { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid #f0f0f0; font-size: 14px; }
+.step:last-child { border-bottom: none; }
+.step-num { width: 24px; height: 24px; border-radius: 50%; background: #e6f4ec; color: #1a6b3a; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>La Comunidad's Property Search</h1>
+  <p>Commercial building opportunities — prepared for your review</p>
+  <div class="divider">
+    <div>
+      <p style="font-size:14px; font-weight:600; color:white; margin:0;">Emmanuel Rosario</p>
+      <p style="font-size:12px; opacity:0.8; color:white; margin:2px 0 0;">Licensed Real Estate Salesperson</p>
+      <p style="font-size:12px; opacity:0.8; color:white; margin:2px 0 0;">Howard Hanna Real Estate Services</p>
+    </div>
+    <div>
+      <p style="font-size:12px; opacity:0.8; color:white; margin:0;">1407 Broadway, 26th Floor, New York, NY 10018</p>
+      <p style="font-size:12px; opacity:0.8; color:white; margin:2px 0 0;">929-293-4645 &nbsp;|&nbsp; 912-600-8020</p>
+      <p style="font-size:12px; opacity:0.8; color:white; margin:2px 0 0;">erosario@hhnyc.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="body">
+
+  <div class="card">
+    <p class="section-title">Properties we found for you</p>
+
+    <div class="prop-card">
+      <img class="prop-img" src="172-180-St-Nicholas-Ave-Facade.jpg" alt="172-180 St Nicholas Ave">
+      <div class="prop-body">
+        <div class="urgent">Urgent — last week accepting offers. Proof of funds required.</div>
+        <p class="prop-address">172-180 St Nicholas Avenue</p>
+        <p class="prop-price">$4,000,000</p>
+        <span class="badge badge-green">Strong interest</span>
+      </div>
+    </div>
+
+    <div class="prop-card">
+      <img class="prop-img" src="1009-Liberty-Ave-Facade.jpg" alt="1009 Liberty Ave">
+      <div class="prop-body">
+        <p class="prop-address">1009 Liberty Avenue</p>
+        <p class="prop-price">$7,500,000</p>
+        <span class="badge badge-yellow">Considering</span>
+      </div>
+    </div>
+
+    <div class="prop-card">
+      <img class="prop-img" src="9625-Rockaway-Blvd-Facade.jpg" alt="9625 Rockaway Blvd">
+      <div class="prop-body">
+        <p class="prop-address">9625 Rockaway Boulevard</p>
+        <p class="prop-price">$2,500,000</p>
+        <span class="badge badge-yellow">Considering</span>
+      </div>
+    </div>
+
+    <div class="prop-card">
+      <img class="prop-img" src="3025-Fulton-St-Facade.jpg" alt="3025 Fulton St">
+      <div class="prop-body">
+        <p class="prop-address">3025 Fulton Street</p>
+        <p class="prop-price-tbd">Price — contact for details</p>
+        <span class="badge badge-yellow">Considering</span>
+      </div>
+    </div>
+
+    <div class="prop-card">
+      <img class="prop-img" src="2501-Fulton-St-Facade.png" alt="2501 Fulton St">
+      <div class="prop-body">
+        <p class="prop-address">2501 Fulton Street</p>
+        <p class="prop-price-tbd">Price — contact for details</p>
+        <span class="badge badge-yellow">Considering</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <p class="section-title">Documents needed to move forward</p>
+    <div class="row"><span>Personal financial statement</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>2 years personal tax returns</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>2 years business / org tax returns</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>Bank statements (6 months)</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>Proof of down payment / funds</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>Entity docs (LLC / org papers)</span><span class="badge badge-yellow">Pending</span></div>
+    <div class="row"><span>Credit authorization form</span><span class="badge badge-yellow">Pending</span></div>
+  </div>
+
+  <div class="card">
+    <p class="section-title">Next steps</p>
+    <div class="step"><div class="step-num">1</div><span>Gather documents listed above</span></div>
+    <div class="step"><div class="step-num">2</div><span>Meet with mortgage broker to confirm budget</span></div>
+    <div class="step"><div class="step-num">3</div><span>Tour shortlisted properties</span></div>
+    <div class="step"><div class="step-num">4</div><span>Submit letter of intent (LOI) on chosen property</span></div>
+    <div class="step"><div class="step-num">5</div><span>Due diligence and inspection period</span></div>
+    <div class="step"><div class="step-num">6</div><span>Close and take ownership</span></div>
+  </div>
+
+</div>
+</body>
+</html>
